@@ -1,8 +1,11 @@
 # Restaurant Management System
 
-It is a well known fact that the restaurants have been the most affected throughout the coronavirus pandemic. They were forced to shut down temporarily for a long period of time. In order to avoid bankruptcy, many restaurants have introduced delivery services. Not only take-away is a great way for the restaurant to maintain its business, but also it is a convenient option for the customers. Digital take-away satisfies the demand for ready-to-eat delivery and customers can order their favorite customized meals or even make their reservations online faster,easier and in just couple of clicks away.
+Nowadays, we live in a digitalized world, where technology is part of every aspect of our lives. Data is saved and processed online, which leads to more efficiency, security and less time consumption. Therefore, restaurants can no longer continue to operate using traditional primitive methods like waiters keeping orders in handwritten notebooks or computing financial reports with Microsoft Excel.
 
-The Restaurant Management System is used to keep track of day to day activity of the restaurant. Its development aims to provide service facility to the restaurant as well as to the customer. It will be designed by 2 approaches. The first one will be the client-side which will consist a simple web page with several services, while the other one will include employees handling their clients, their orders and helping them easily find free tables or place orders.
+The software we are providing aims to keep track of the day-to-day activity of a restaurant and facilitate the work of the staff by reducing manual work and effectively coordinating between the different sectors. The system will also make the management of the restaurant much easier as it will maintain records not only on orders and supplies but also on the daily performance of each employee and the hours they have worked. Lastly, our application will help introduce the restaurant to the possible clients who will be able to reserve a table or communicate with the staff without wasting any time.
+
+The purpose of this software is to build a system which will help the restaurant in their daily work, using all the techniques that we know, ensuring effectiveness and efficiency to save time for both the customer and the restaurant staff. Some of the main actions the software will provide are very organized and detailed information regarding generating reports, employee records and managing orders.
+
 
 
 
