@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Muraga</title>
+  </head>
+  <body>
+    <div id="navbar" class="fix">
+      <!-- Navigation Bar -->
+      <div>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="makeReservation.html">Make Reservation</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="contactUs.html">Contact</a></li>
+              <li class="li1"> <a href="#">Log In</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <script>
+      // When the user scrolls down 10px from the top of the document, slide down the navbar
+      window.onscroll = function () { scrollFun() };
+
+      function scrollFun() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("navbar").style.top = "0px";
+          }
+      }
+  </script>
+  <br>
+  <br>
+  <br>
+      <!-- Header -->
+      <header class="header center">
+        <div class="header-text">
+          <h1 class="heading">Big House Muraga</h1>
+          <p class="header-paragraph">
+            Where there is good food, there is happiness.
+          </p>
+        </div>
+        <div class="logo">
+          <h1>
+            <span class="center">M</span>
+            <span class="center">u</span>
+            <span class="center">r</span>
+            <span class="center">a</span>
+            <span class="center">g</span>
+            <span class="center">a</span>
+          </h1>
+        </div>
+      </header>
+      <br>
+      <br>
+      <!-- End of Header -->
+      <!-- Popular tours -->
+      <div class="wrapper2">
+        <section class="section-2 target" id="popular-cars">
+          <h1 class="section2-heading">Popular Dishes</h1>
+          <div class="cards-wrapper center">
+            <div class="card">
+              <img src="dish.jpeg" class="card-img" />
+              <br>
+              <h3 class="dishes-price">$ 12.5</h3>
+              <br>
+              <p> Salmon</p>
+              <br>
+            </div>
+            <div class="card">
+              <img src="dish1.jpeg" class="card-img" />
+              <br>
+              <h3 class="dishes-price">$ 6.5</h3>
+              <br>
+              <p>Mushroom Pasta</p>
+              <br>
+            </div>
+            <div class="card">
+              <img src="dish3.jpeg" class="card-img" />
+              <br>
+              <h3 class="dishes-price">$ 11</h3>
+              <br>
+              <p>Steak</p>
+              <br>
+            </div>
+          </div>
+          <br>
+          <div class="cards-wrapper center">
+            <div class="card">
+              <img src="dish4.jpg" class="card-img" />
+              <br>
+              <h3 class="dishes-price">$ 2.5</h3>
+              <br>
+              <p> Souffle</p>
+              <br>
+            </div>
+            <div class="card">
+              <img src="cotta.jpg" class="card-img" />
+              <br>
+              <h3 class="dishes-price">$3.0 </h3>
+              <br>
+              <p> Panna cotta</p>
+              <br>
+            </div>
+            <div class="card">
+              <img src="cheese.jpeg" class="card-img" />
+              <br>
+              <h3 class="dishes-price">$ 2.5</h3>
+              <br>
+              <p> Cheesecake</p>
+              <br>
+            </div>
+
+          </div>
+        </section>
+      </div>
+      <!-- End of Popular tours -->
+   <br>
+   <br>
+      <!-- Stories -->
+      <section class="stories">
+        <div class="video-container">
+          <video class="bg-video" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="stories-wrapper">
+          <div class="story-bg">
+            <div class="story">
+              <img
+                src="customer.jpg"
+                alt="Customer image"
+                class="story-image"
+              />
+              <div class="story-text">
+                <h1 class="story-heading">
+                  A little slice of heaven.
+                </h1>
+                <p class="story-paragraph">
+                  Lovely lunch today. Ordered the crab cake sandwich and was pleased by the quality of the crab cake, as well as the nicely toasted roll, thick slices of ripe avocado, and crisp hot bacon which accompanied it. The side of fresh fruit was also generous and perfectly ripe. 
+                  A very good experience! Add this to the best dining environment on a gorgeous Spring day, and it adds up to perfection!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="story-bg">
+            <div class="story">
+              <img
+                src="customer1.jpg"
+                alt="Customer image"
+                class="story-image"
+              />
+              <div class="story-text">
+                <h1 class="story-heading">
+                  Good people, good food, good time.
+                </h1>
+                <p class="story-paragraph">
+                  This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, 
+                  wide wine list and wonderful dessert. 
+                  I recommend to everyone! I would like to come back here again and again.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Stories -->
+
+      
+      <!-- Footer -->
+      
+      <!-- End of Footer -->
+    </div>
+    
+  </body>
+</html>
