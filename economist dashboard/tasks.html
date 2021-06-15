@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Economist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="economist.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand">
+                <span class="ti-crown"></span> 
+                <span>muraga</span>
+            </h3> 
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="economist.html">
+                        <span class="ti-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tasks.html">
+                        <span class="ti-agenda"></span>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <span class="ti-folder"></span>
+                        <span>Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="supplier.html">
+                        <span class="ti-id-badge"></span>
+                        <span>Supplier Contacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html">
+                        <span class="ti-shopping-cart"></span>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <div class="main-content">
+        <div class="container">
+            <input type="text" class="txtb" placeholder="Add a task">
+            <div class="notcomp">
+              <h3>Not Completed</h3>
+      
+      
+      
+            </div>
+      
+            <div class="comp">
+              <h3>Completed</h3>
+            </div>
+          </div>
+      
+      
+          <script type="text/javascript">
+            $(".txtb").on("keyup",function(e){
+              //13  means enter button
+              if(e.keyCode == 13 && $(".txtb").val() != "")
+              {
+                var task = $("<div class='task'></div>").text($(".txtb").val());
+                var del = $("<i class='fas fa-trash-alt'></i>").click(function(){
+                  var p = $(this).parent();
+                  p.fadeOut(function(){
+                    p.remove();
+                  });
+                });
+      
+                var check = $("<i class='fas fa-check'></i>").click(function(){
+                  var p = $(this).parent();
+                  p.fadeOut(function(){
+                    $(".comp").append(p);
+                    p.fadeIn();
+                  });
+                  $(this).remove();
+                });
+      
+                task.append(del,check);
+                $(".notcomp").append(task);
+                  //to clear the input
+                $(".txtb").val("");
+              }
+            });
+          </script>
+
+
+
+
+    </body>
+    </html>
